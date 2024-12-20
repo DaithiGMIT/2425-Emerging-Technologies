@@ -43,3 +43,38 @@ header {
     border-top-left-radius: 10px;
     border-top-right-radius: 10px
 }
+
+#chat-history {
+    /* Expand to fill available space */
+    flex: 1;
+    padding: 15px;
+    border-top: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    background-color: #fdfdfd;
+}
+
+#chat-history .message {
+    /* Adds space between messages */
+    margin-bottom: 15px;
+    /* Adds padding inside each message */
+    padding: 10px;
+    /* Rounds the corners of the message box */
+    border-radius: 5px;
+    /* Set spacing */
+    line-height: 1.5;
+}
+
+#chat-history .message.user {
+    background-color: #e6f7ff;
+    color: #0056b3;
+    align-self: flex-end;
+    /* Have the user messages align to the right */
+    text-align: right;
+}
+
+#chat-history .message.eliza {
+    background-color: #f0f0f0;
+    color: #333;
+    /* Align bot message to left */
+    align-self: flex-start;
+}
