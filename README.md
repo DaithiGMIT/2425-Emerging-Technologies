@@ -1,6 +1,6 @@
 # Emerging Technologies Project
 
-This repository contains my coursework for the **Emerging Technologies** module at [ATU](https://www.gmit.ie/). The project aims to showcase my ability to research, implement, and demonstrate emerging computing technologies through a series of tasks and a small implementation project.
+This repository contains my coursework for the **Emerging Technologies** module at [ATU](https://www.gmit.ie/). The project showcases my ability to research, implement, and demonstrate emerging computing technologies through a series of tasks and a practical implementation project.
 
 ---
 
@@ -15,9 +15,9 @@ The purpose of this project is to:
 
 ## Repository Structure
 
-- `trigrams.ipynb`: Will contain the solutions for the four tasks.
-- `trigrams.json`: Will contain the exported trigram model in JSON format.
-- `eliza/`: Directory that will contain the ELIZA chatbot project.
+- `trigrams.ipynb`: Contains the solutions for the four tasks related to trigram modeling and analysis.
+- `trigrams.json`: The exported trigram model in JSON format.
+- `eliza/`: Directory containing the ELIZA chatbot project.
   - `index.html`: Main chatbot page.
   - `style.css`: CSS for chatbot styling.
   - `eliza.js`: JavaScript logic for the chatbot.
@@ -30,7 +30,7 @@ The purpose of this project is to:
 ## Tasks
 
 ### Task 1: Third-order Letter Approximation Model
-Using text from [Project Gutenberg](https://www.gutenberg.org/), I will create a trigram model of the English language.
+Using text from [Project Gutenberg](https://www.gutenberg.org/), I created a trigram model of the English language. The model captures sequences of three characters and their frequencies.
 
 Example output:
 ```json
@@ -38,33 +38,56 @@ Example output:
 ```
 
 ### Task 2: Third-order Letter Approximation Generation
-Using the trigram model, I will generate a 10,000-character string. Starting with "TH".
+Using the trigram model, I generated a 10,000-character string starting with "TH". The model uses the last two characters to probabilistically determine the next character, reflecting natural English patterns.
 
 ### Task 3: Analyze the Model
-I will generate text against `words.txt`, calculating the percentage of words in the text that matched valid English words.
+The generated text was analyzed against `words.txt`. The analysis determined the percentage of generated words that are valid English words.
+
+One version of Results:
+- Total words: **1848**
+- Valid English words: **687**
+- Percentage Valid: **37.18%**.
 
 ### Task 4: Export the Model as JSON
-The trigram model will be exported as a JSON file (`trigrams.json`) for reuse.
+The trigram model was exported as a JSON file (`trigrams.json`) for reuse. This file can be found in the root directory.
 
 ---
 
 ## ELIZA Chatbot Project
 
-The ELIZA chatbot will be implemented as a simple, client-side web application.
+The ELIZA chatbot was implemented as a simple, client-side web application using **HTML**, **CSS**, and **JavaScript**.
+
+### Features:
+- User input is dynamically processed, and responses are generated based on pre-defined patterns.
+- Responses include dynamic placeholders to reflect parts of the user’s input.
+- Chat history is displayed in a scrollable interface.
 
 ### Deployment:
-The chatbot will be hosted on GitHub Pages. [Link will be here when complete]
+The chatbot is hosted on **GitHub Pages**. [Live Demo Link](https://daithigmit.github.io/2425-Emerging-Technologies/eliza/)
 
 ---
 
 ## Key Learnings
 
-1. Learning Outcomes will be posted here as project progresses
+1. Explored and implemented text generation using a trigram model.
+2. Developed an appreciation for natural language processing techniques.
+3. Built a functional chatbot interface using web development technologies.
+4. Deployed a project to GitHub Pages.
+
+---
 
 ## How to Run
 
-Clone the repository:
+### Trigram Tasks:
+To run the `trigrams.ipynb` notebook:
+1. Clone the repository:
    ```bash
    git clone https://github.com/DaithiGMIT/2425-Emerging-Technologies
    cd 2425-Emerging-Technologies
+   2. Open `trigrams.ipynb` in Jupyter Notebook or any compatible environment.
 
+### ELIZA Chatbot:
+1. Clone the repository and navigate to the `eliza` directory.
+2. Open `index.html` in any modern web browser to use the chatbot.
+
+3. Alternatively, simply visit the [Live Demo Link](https://daithigmit.github.io/2425-Emerging-Technologies/eliza/)
