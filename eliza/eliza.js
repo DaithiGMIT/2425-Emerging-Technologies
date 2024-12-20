@@ -57,11 +57,27 @@ document.addEventListener("DOMContentLoaded", () => {
 
     const patterns = [
         {
-            pattern: /hello|hi|hey/i,
+            pattern: /hello|hi|hey|good morning|good evening/i,
             responses: [
-                "Hello! How are you feeling today?",
+                "Hello! How are you today?",
                 "Hi there! What’s on your mind?",
                 "Hey! How can I help you?"
+            ]
+        },
+        {
+            pattern: /goodbye|bye|see you|take care/i,
+            responses: [
+                "Goodbye! It was nice talking to you.",
+                "See you next time!",
+                "Take care! Feel free to return if you'd like to chat more."
+            ]
+        },
+        {
+            pattern: /thank you|thanks/i,
+            responses: [
+                "You’re welcome! Is there anything else you’d like to discuss?",
+                "I’m happy to help!",
+                "It’s my pleasure. Let me know if there’s anything else."
             ]
         },
         {
@@ -86,6 +102,70 @@ document.addEventListener("DOMContentLoaded", () => {
                 "Why do you feel you need {0}?",
                 "Would getting {0} help you feel better?",
                 "What would achieving {0} mean to you?"
+            ]
+        },
+        {
+            pattern: /help|assist|support/i,
+            responses: [
+                "How can I assist you?",
+                "I’m here to help. What do you need?",
+                "Let me know how I can support you."
+            ]
+        },
+        {
+            pattern: /i feel (.*)/i,
+            responses: [
+                "Why do you feel {0}?",
+                "Can you elaborate on why you feel {0}?",
+                "How does feeling {0} affect you?"
+            ]
+        },
+        {
+            pattern: /i am (.*)/i,
+            responses: [
+                "What makes you {0}?",
+                "Is being {0} something that happens often?",
+                "How long have you been {0}?"
+            ]
+        },
+        {
+            pattern: /why (.*)/i,
+            responses: [
+                "Why do you think {0}?",
+                "What leads you to believe {0}?",
+                "Is there a specific reason for {0}?"
+            ]
+        },
+        {
+            pattern: /what if (.*)/i,
+            responses: [
+                "What do you think would happen if {0}?",
+                "How would {0} affect you?",
+                "Does thinking about {0} bring you comfort or concern?"
+            ]
+        },
+        {
+            pattern: /do you think (.*)/i,
+            responses: [
+                "Why do you ask if I think {0}?",
+                "What do you think about {0}?",
+                "Do you often wonder about {0}?"
+            ]
+        },
+        {
+            pattern: /tell me about (.*)/i,
+            responses: [
+                "What about {0} interests you?",
+                "Why would you like to know about {0}?",
+                "What does {0} mean to you?"
+            ]
+        },
+        {
+            pattern: /sorry|apologies/i,
+            responses: [
+                "There’s no need to apologize.",
+                "It’s okay! We all make mistakes.",
+                "No need to worry about it. Let’s move on."
             ]
         }
     ];
