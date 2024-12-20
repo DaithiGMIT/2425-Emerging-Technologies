@@ -30,3 +30,14 @@ body, html {
     /* Stop contents from over flowing the container */
     overflow: hidden;
 }
+
+header {
+    /* set bg color*/
+    background-color: #0078d4;
+    /* Set Text Color */
+    color: white;
+    /* Add Padding to header */
+    padding: 15px; 
+    /* Centers the header title horizontally */
+    text-align: center; 
+}
