@@ -16,7 +16,11 @@ document.addEventListener("DOMContentLoaded", () => {
             // Add user message to chat
             addMessageToChat("user", message); 
             // Clear the input field 
-            userInput.value = ""; 
+            userInput.value = "";
+            // Generate a response
+            const response = "Chatbot Default Response";
+            // Add response to chat history
+            addMessageToChat("eliza", response);
         }
     });
 
