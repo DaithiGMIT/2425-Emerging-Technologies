@@ -48,6 +48,8 @@ One version of Results:
 - Valid English words: **687**
 - Percentage Valid: **37.18%**.
 
+The Basic Trigram model generated from only 5 books was able too suprisingly genreate a valid english word in almost a third of the time which really goes to show the generation power of a true LLM.
+
 ### Task 4: Export the Model as JSON
 The trigram model was exported as a JSON file (`trigrams.json`) for reuse. This file can be found in the root directory.
 
@@ -83,7 +85,9 @@ To run the `trigrams.ipynb` notebook:
 1. Clone the repository:
    ```bash
    git clone https://github.com/DaithiGMIT/2425-Emerging-Technologies
+   
    cd 2425-Emerging-Technologies
+   
    2. Open `trigrams.ipynb` in Jupyter Notebook or any compatible environment.
 
 ### ELIZA Chatbot:
