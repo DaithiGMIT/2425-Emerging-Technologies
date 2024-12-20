@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!-- Ensure Page scales correctly -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My ELIZA Chatbot</title>
+    <!-- Link to the CSS file for styling -->
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- Main container for the chatbot interface -->
+    <div id="chatbot-container">
+        <!-- Header section for the chatbot title -->
+        <header>
+            <h1>My ELIZA Chatbot</h1>
+        </header>
+        <main id="chat-history">
+            <!-- Chat messages will appear here -->
+        </main>
+        <!-- Footer section with user input and send button -->
+        <footer>
+            <!-- Input field for the user to type their message -->
+             <!-- Place holder is the default text that will be displayed -->
+            <input type="text" id="user-input" placeholder="Type your message here..." />
+            <!-- Button to send the user message -->
+            <button id="send-button">Send</button>
+        </footer>
+    </div>
+    <!-- Link to the JavaScript file for chatbot logic -->
+    <script src="eliza.js"></script>
+</body>
+</html>
