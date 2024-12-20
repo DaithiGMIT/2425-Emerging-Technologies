@@ -18,8 +18,8 @@ document.addEventListener("DOMContentLoaded", () => {
             // Clear the input field 
             userInput.value = "";
             // Generate a response
-            const response = "Chatbot Default Response";
-            // Add response to chat history
+            const response = generateElizaResponse(message);
+            // Add bot response to chat history
             addMessageToChat("eliza", response);
         }
     });
@@ -37,4 +37,56 @@ document.addEventListener("DOMContentLoaded", () => {
         // Scroll to the bottom of the chat
         chatHistory.scrollTop = chatHistory.scrollHeight;
     }
+
+    function generateElizaResponse(message) {
+
+        // For each pattern in patterns compare the message for a match
+        for (const { pattern, responses } of patterns) {
+            // Check to see if anything in the message matches any pattern
+            const match = message.match(pattern);
+            if (match) {
+                // Choose a random reponse from the patterns
+                const response = responses[Math.floor(Math.random() * responses.length)];
+                // Insert captured part of message into the response
+                return response.replace("{0}", match[1] || "").trim();
+            }
+        }
+
+        return "I'm not sure I understand. Can you elaborate?";
+    }
+
+    const patterns = [
+        {
+            pattern: /hello|hi|hey/i,
+            responses: [
+                "Hello! How are you feeling today?",
+                "Hi there! What’s on your mind?",
+                "Hey! How can I help you?"
+            ]
+        },
+        {
+            pattern: /you remind me of (.*)/i,
+            responses: [
+                "Why do you think I remind you of {0}?",
+                "What makes you think of {0} when talking to me?",
+                "Is it a good feeling to be reminded of {0}?"
+            ]
+        },
+        {
+            pattern: /(.*)mother|father|family|parent(.*)/i,
+            responses: [
+                "Tell me more about your family.",
+                "How does that make you feel about your family?",
+                "What role does your family play in your thoughts?"
+            ]
+        },
+        {
+            pattern: /(.*) I need (.*)/i,
+            responses: [
+                "Why do you feel you need {0}?",
+                "Would getting {0} help you feel better?",
+                "What would achieving {0} mean to you?"
+            ]
+        }
+    ];
 });
