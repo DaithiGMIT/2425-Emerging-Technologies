@@ -33,6 +33,7 @@ The purpose of this project is to:
 Using text from [Project Gutenberg](https://www.gutenberg.org/), I created a trigram model of the English language. The model captures sequences of three characters and their frequencies.
 
 Example output:
+
 ```json
 {"IT ": 2, "T I": 3, " IS": 2, "IS ": 1, ...}
 ```

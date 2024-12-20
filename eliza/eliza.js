@@ -45,7 +45,7 @@ document.addEventListener("DOMContentLoaded", () => {
             // Check to see if anything in the message matches any pattern
             const match = message.match(pattern);
             if (match) {
-                // Choose a random reponse from the patterns
+                // Choose a random reponse from the patterns.
                 const response = responses[Math.floor(Math.random() * responses.length)];
                 // Insert captured part of message into the response
                 return response.replace("{0}", match[1] || "").trim();
