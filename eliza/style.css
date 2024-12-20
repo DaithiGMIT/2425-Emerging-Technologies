@@ -39,5 +39,7 @@ header {
     /* Add Padding to header */
     padding: 15px; 
     /* Centers the header title horizontally */
-    text-align: center; 
+    text-align: center;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px
 }
