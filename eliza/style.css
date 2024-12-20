@@ -1,0 +1,32 @@
+/* Set the margin and padding to 0 so styling is the same regardless of browser */
+body, html {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    /* Set font */
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    color: #333;
+}
+
+/* Chatbot Container */
+#chatbot-container {
+    /* Sets max width */
+    max-width: 600px;
+    /* Center vertically and horizontally */
+    margin: 50px auto;
+    /* Adds small border */
+    border: 1px solid #ccc;
+    /* Set Border corner radius */
+    border-radius: 10px;
+    /* Sets bg color */
+    background-color: #fff;
+    /* Make container a flexbox for organising its child elemnts */
+    display: flex;
+    /* Stack elements vertically */
+    flex-direction: column;
+    /* Set container height to 80% of the viewport height*/
+    height: 80vh;
+    /* Stop contents from over flowing the container */
+    overflow: hidden;
+}
