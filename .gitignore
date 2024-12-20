@@ -1,0 +1,4 @@
+# Ignore The notebook used for testing code
+testNotebook.ipynb
+# Ignore the downloads folder to keep the repo clean
+downloads/
